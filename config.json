@@ -1,0 +1,26 @@
+{
+  "inbounds": [{
+    "port": 10000,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{"id": "8b5f3a02-2d14-41d8-bd20-75f8c67a3f01"}],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "show": false,
+        "dest": "alfabank.ru:443",
+        "xver": 0,
+        "serverNames": ["alfabank.ru", "www.alfabank.ru"],
+        "privateKey": "uO6_zXFDHUGvCza7e5CMa34oexEcXUqAfqz_YY7yo1M=",
+        "shortIds": ["9ec9a56b"]
+      },
+      "grpcSettings": {
+        "serviceName": "alfa-stream"
+      }
+    }
+  }],
+  "outbounds": [{ "protocol": "freedom" }]
+}
